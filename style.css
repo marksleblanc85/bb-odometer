@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('font/eurostileltstd.otf');
+    src: local('Eurostile LT Std Medium'), 
+         url('font/eurostileltstd.otf') format('opentype'),
+         url('font/eurostileltstd.woff') format('woff'),
+         url('font/eurostileltstd.svg#font') format('svg'); 
+}
+.left {float:left;}
+.right {float:right;}
+hr {
+	border:0;
+	clear:both;
+	display:block;
+	height:0;
+	margin:0;
+}
+b {font-weight:bold;}
+.width {
+	margin:0 auto;
+	width:958px
+}
+.relative {position:relative;}
+/* styles */
+img {display:block;}
+body {
+	background:#e5e5e5 url(images/page-bg-repeat.png) repeat-x left top;
+	color:#333333;
+	font-family:Arial,Helvetica,sans-serif
+}
+#header {
+	-webkit-box-shadow: 0 3px 20px 0 #bbb;
+	-moz-box-shadow: 0 3px 20px 0 #bbb;
+	box-shadow: 0 3px 20px 0 #bbb;
+	border-bottom:4px solid #9e1616;
+	height:339px;
+	position:relative
+}
+.header {
+	left:0;
+	position:absolute;
+	top:0
+}
+.numbers {
+	color:#fff;
+	font-family:'Eurostile LT Std',sans-serif;
+	font-size:50px
+}
+#counter {
+	left:225px;
+	position:absolute;
+	top:175px
+}
+#counter span {
+	background:url(images/numbers.png) repeat-y left bottom;
+	display:block;
+	float:left;
+	height:61px;
+	overflow:hidden;
+	padding-right:8px;
+	text-indent:-9999px;
+	width:38px;
+}
+#counter span.white {background-position:left top;}
+#counter span.last {
+	padding-right:4px;
+	width:36px
+}
+#counter span.black {
+	background-position:right top;
+	width:34px;
+}
+#label {
+	color:#fff;
+	font-family:'Oswald','Univers','Din',Arial, Helvetica, sans-serif;
+	font-size:34px;
+	opacity:0;
+	left:610px;
+	position:absolute;
+	top:210px
+}
+#content {
+	background-color:#fff;
+	-webkit-box-shadow: 0 3px 0 0 #bbb;
+	-moz-box-shadow: 0 3px 0 0 #bbb;
+	box-shadow: 0 3px 0 0 #bbb;
+	height:500px
+}
+#footer {
+
+}
+#footer .width {
+	background-color:#000;
+	padding:30px 20px;
+	width:920px
+}

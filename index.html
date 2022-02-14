@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Black Book | Activator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="style.css">
+		<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="width">
+			<div id="header">
+				<img src="images/header-bg.jpg" class="img header">
+				<div id="counter">
+					<span class="white">0</span>
+					<span class="white">0</span>
+					<span class="white">0</span>
+					<span class="white">0</span>
+					<span class="white">0</span>
+					<span class="white">2</span>
+					<span class="white last">0</span>
+					<span class="black">0</span>
+				</div>
+				<div id="label"></div>
+			</div>
+			<div id="content" class="relative">
+				<div id="parts">
+				</div>
+			</div>
+			<div id="footer">
+				
+			</div>
+			<div class="copyright">
+				<p>Black Book&reg; is a registered trademark of Hearst Business Media Corporation.<br/>
+				&copy; 2013 Hearst Business Media Corporation. All rights reserved. Patent pending.</p>
+				<div class="clear:both;"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.backgroundpos.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">		
+			function loop(){$('#counter').find(":nth-child(8)").animate({backgroundPosition:'right +=570px'}, 30000, 'linear', loop);}	
+			function firstSet(){
+				/*$('#counter').find(":nth-child(8)").stop();
+				$('#label').css('margin-top','30px').css('opacity',0);
+				var n = '0|0|0|0|0|2|0|0';
+				var i = 0;
+				var parts = n.split("|");
+				for (i = 0; i < parts.length; i++){
+					if(parts[i] != 8){
+						alert(parts[i]);
+						$('#counter').append('<span class="white">'+parts[i]+'</span>');
+					} else {
+						$('#counter').append('<span class="black">'+parts[i]+'</span>');
+					}
+				   
+				}
+
+				function rotate(){
+					$('#counter span').each(function(){
+						var c = parseInt($(this).html());
+						if($(this).hasClass('white')){
+							var j = 'left ';
+						} else {
+							var j = 'right '
+						};
+						$(this).animate({backgroundPosition:j+((c*57)+57)+'px'},1300,'easeOutSine');
+						
+					});
+				}
+				setTimeout(function(){			
+					rotate();
+				},5000);
+				loop();
+				$('#label').animate({
+					opacity: 1,
+					marginTop:'-30px'
+				},1300 ).html('OEM Websites');*/
+				$('#counter').find(":nth-child(8)").stop();
+				$('#label').css('margin-top','30px').css('opacity',0);
+				$('#counter').find(":nth-child(1)").html('0');
+				$('#counter').find(":nth-child(2)").html('0');
+				$('#counter').find(":nth-child(3)").html('0');
+				$('#counter').find(":nth-child(4)").html('0');
+				$('#counter').find(":nth-child(5)").html('0');
+				$('#counter').find(":nth-child(6)").html('2');
+				$('#counter').find(":nth-child(7)").html('0');
+				
+				$('#counter span').each(function(){
+					var c = parseInt($(this).html());
+					if($(this).hasClass('white')){
+						var j = 'left ';
+					} else {
+						var j = 'right '
+					};
+					$(this).animate({backgroundPosition:j+((c*57)+57)+'px'},1300,'easeOutSine');
+					
+				});
+				loop();
+				$('#label').animate({
+					opacity: 1,
+					marginTop:'-30px'
+				},1300 ).html('OEM Websites');
+				setTimeout(function(){			
+					secondSet();
+				},5000);
+
+				
+			}
+			function secondSet(){
+				$('#counter').find(":nth-child(8)").stop();
+				$('#label').css('margin-top','30px').css('opacity',0);
+				$('#counter').find(":nth-child(1)").html('0');
+				$('#counter').find(":nth-child(2)").html('0');
+				$('#counter').find(":nth-child(3)").html('0');
+				$('#counter').find(":nth-child(4)").html('8');
+				$('#counter').find(":nth-child(5)").html('5');
+				$('#counter').find(":nth-child(6)").html('0');
+				$('#counter').find(":nth-child(7)").html('0');
+				
+				$('#counter span').each(function(){
+					var c = parseInt($(this).html());
+					if($(this).hasClass('white')){
+						var j = 'left ';
+					} else {
+						var j = 'right '
+					};
+					$(this).animate({backgroundPosition:j+((c*57)+627)+'px'},1300,'easeOutSine');
+					
+				});
+				loop();
+				$('#label').animate({
+					opacity: 1,
+					marginTop:'-30px'
+				},1300 ).html('Dealer Websites');
+				setTimeout(function(){			
+					thirdSet();
+				},5000);
+			}
+			function thirdSet(){
+				$('#counter').find(":nth-child(8)").stop();
+				$('#label').css('margin-top','30px').css('opacity',0);
+				$('#counter').find(":nth-child(1)").html('3');
+				$('#counter').find(":nth-child(2)").html('0');
+				$('#counter').find(":nth-child(3)").html('0');
+				$('#counter').find(":nth-child(4)").html('0');
+				$('#counter').find(":nth-child(5)").html('0');
+				$('#counter').find(":nth-child(6)").html('0');
+				$('#counter').find(":nth-child(7)").html('0');
+				$('#counter').find(":nth-child(8)").html('0');
+				
+				$('#counter span').each(function(){
+					var c = parseInt($(this).html());
+					if($(this).hasClass('white')){
+						var j = 'left ';
+					} else {
+						var j = 'right '
+					};
+					$(this).animate({backgroundPosition:j+((c*57)+1197)+'px'},1300,'easeOutSine');
+				});
+				loop();
+				$('#label').animate({
+					opacity: 1,
+					marginTop:'-30px'
+				},1300 ).html('High Quality Leads');
+				setTimeout(function(){			
+					firstSet();
+				},5000);
+			}
+			$(function(){	
+				setTimeout(function(){			
+					firstSet();
+				},1000);
+			});
+		</script>	
+	</body>
+</html>
