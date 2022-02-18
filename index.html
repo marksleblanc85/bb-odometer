@@ -29,7 +29,6 @@
 				</div>
 			</div>
 			<div id="footer">
-				
 			</div>
 			<div class="copyright">
 				<p>Black Book&reg; is a registered trademark of Hearst Business Media Corporation.<br/>
@@ -42,41 +41,6 @@
 		<script type="text/javascript">		
 			function loop(){$('#counter').find(":nth-child(8)").animate({backgroundPosition:'right +=570px'}, 30000, 'linear', loop);}	
 			function firstSet(){
-				/*$('#counter').find(":nth-child(8)").stop();
-				$('#label').css('margin-top','30px').css('opacity',0);
-				var n = '0|0|0|0|0|2|0|0';
-				var i = 0;
-				var parts = n.split("|");
-				for (i = 0; i < parts.length; i++){
-					if(parts[i] != 8){
-						alert(parts[i]);
-						$('#counter').append('<span class="white">'+parts[i]+'</span>');
-					} else {
-						$('#counter').append('<span class="black">'+parts[i]+'</span>');
-					}
-				   
-				}
-
-				function rotate(){
-					$('#counter span').each(function(){
-						var c = parseInt($(this).html());
-						if($(this).hasClass('white')){
-							var j = 'left ';
-						} else {
-							var j = 'right '
-						};
-						$(this).animate({backgroundPosition:j+((c*57)+57)+'px'},1300,'easeOutSine');
-						
-					});
-				}
-				setTimeout(function(){			
-					rotate();
-				},5000);
-				loop();
-				$('#label').animate({
-					opacity: 1,
-					marginTop:'-30px'
-				},1300 ).html('OEM Websites');*/
 				$('#counter').find(":nth-child(8)").stop();
 				$('#label').css('margin-top','30px').css('opacity',0);
 				$('#counter').find(":nth-child(1)").html('0');
